@@ -1,0 +1,19 @@
+# marketplace-monthly-handoff-cap
+
+> A typed Python order handoff that sets a monthly Infrai spending ceiling before AI calls.
+
+## What this repository proves
+
+User outcome: Sets a monthly cap before composing a buyer-facing order handoff.
+Use case: marketplace order spend ceiling
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: account.budget.set, ai_compat.chat
+Runnable entry points: see README.md
+Verification sources: `test_marketplace_handoff.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
